@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="boot-mq-consumer" />
+        <module name="boot-mq-produce" />
+        <module name="ActiveMQ" />
+        <module name="boot-mq-topic-produce" />
+        <module name="boot-mq-topic-consumer" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="boot-mq-consumer" options="-parameters" />
+      <module name="boot-mq-produce" options="-parameters" />
+      <module name="boot-mq-topic-consumer" options="-parameters" />
+      <module name="boot-mq-topic-produce" options="-parameters" />
+    </option>
+  </component>
+</project>
